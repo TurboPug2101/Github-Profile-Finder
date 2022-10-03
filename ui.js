@@ -77,7 +77,14 @@ class UI{
             },3000);
         }
 
-        // clear alert methd
+        // clear alert methdclearAlert(){
+            const currentAlert=document.querySelector('.alert');
+
+            if(currentAlert){
+                currentAlert.remove();
+            }
+        }
+    
        
         clearProfile(){
             this.profile.innerHTML=' ';
